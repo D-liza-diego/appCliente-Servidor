@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="526dp"
+        android:layout_height="372dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/logo" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:boxBackgroundMode="outline"
+        app:counterEnabled="true"
+        app:counterMaxLength="9"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/celularlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:hint="Numero de celular"
+            android:inputType="number"
+            android:maxLength="9"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:boxBackgroundMode="outline"
+        app:counterEnabled="true"
+        app:counterMaxLength="8"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dnilogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:hint="Numero de dni"
+            android:inputType="number"
+            android:maxLength="8"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+
+        android:id="@+id/btnlogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="INGRESAR"
+        android:textColor="#FFFF"
+        app:backgroundTint="#2196F3"
+        android:background="@drawable/boton"
+        app:layout_constraintVertical_bias="0.2" />
+
+
+    <TextView
+        android:id="@+id/registrologin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:onClick="registrar"
+        android:text="¿no tienes cuenta? Registrate"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

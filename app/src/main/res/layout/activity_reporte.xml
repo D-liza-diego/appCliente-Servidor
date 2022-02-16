@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    tools:context=".reporte">
+
+    <ImageView
+        android:id="@+id/arriba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/header"
+        tools:srcCompat="@drawable/header" />
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        tools:srcCompat="@tools:sample/avatars" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+
+        android:id="@+id/descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Descripcion breve"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/calle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="calle"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/coordenadas"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="0dp"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="coorndenas"
+        android:textSize="14sp" />
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="false"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginTop="30dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:text="ALERTAR"
+        app:backgroundTint="#2196F3"
+        android:background="@drawable/boton"
+        app:layout_constraintVertical_bias="0.2" />
+
+
+</LinearLayout>

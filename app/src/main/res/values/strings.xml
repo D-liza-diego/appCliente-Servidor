@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Security</string>
+
+    <string-array name="delitos">
+        <item>Robo al paso</item>
+        <item>Trafico de drogas</item>
+        <item>Violaciones</item>
+        <item>Pandillaje</item>
+    </string-array>
+    <string name="title_activity_mapa">Map</string>
+
+</resources>
